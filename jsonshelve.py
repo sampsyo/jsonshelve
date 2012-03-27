@@ -1,15 +1,6 @@
 """A simple key/value store API. Like shelve but uses JSON instead of
 pickle (so data must be simple structures instead of arbitrary Python
 objects).
-
-Goals:
-
-    * Multiple backends (flat JSON, SQLite, LevelDB, DBMs,
-      wrapped-in-pickle, ...).
-    * Concurrency management & naive ACID.
-    * Single-codebase Python 2 and 3 compatibility.
-    * Unicode keys?
-    * Extra niceness for indexing and such?
 """
 import json
 import collections
